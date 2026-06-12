@@ -1,6 +1,6 @@
 # Pipeline Runner
 
-半自动软件工程流水线——输入任务描述，自动完成 **设计 → 拆分 → 编码 → 测试 → 审查 → 修复闭环** 全流程。
+**后端语言为 Java** 的半自动软件工程流水线——输入任务描述，自动完成 **设计 → 拆分 → 编码 → 测试 → 审查 → 修复闭环** 全流程。
 
 仅在技术方案方向确认、A 级高风险任务、不可自动修复的失败时暂停。
 
@@ -15,6 +15,19 @@
 chmod +x install.sh
 ./install.sh            # 首次安装
 ./install.sh --force    # 覆盖已有 skill
+```
+
+## 卸载
+
+```bash
+# Windows (PowerShell)
+.\uninstall.ps1              # 卸载
+.\uninstall.ps1 -WhatIf      # 干跑，查看将要删除的内容
+
+# Linux / macOS
+chmod +x uninstall.sh
+./uninstall.sh               # 卸载
+./uninstall.sh --dry-run     # 干跑，查看将要删除的内容
 ```
 
 ## 快速开始
@@ -123,6 +136,8 @@ chmod +x install.sh
 ├── README.md
 ├── install.ps1                     # Windows 安装
 ├── install.sh                      # Linux/macOS 安装
+├── uninstall.ps1                   # Windows 卸载
+├── uninstall.sh                    # Linux/macOS 卸载
 └── skills/
     ├── workflow/pipeline-runner.md
     ├── design/solution-design.md
