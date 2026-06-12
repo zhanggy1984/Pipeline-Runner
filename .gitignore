@@ -1,0 +1,12 @@
+# Local Claude settings (per-user permissions)
+# Claude Code 配置（工作流状态、memory、权限等）
+.claude/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+*.iml
+.vscode/
